@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="FPTS15_MA <= 36.0\nmse = 213.2\nsamples = 2073\nvalue = 35.9"] ;
+1 [label="FPTS18_MA <= 30.3\nmse = 113.9\nsamples = 1133\nvalue = 28.3"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="FPTS13_MA <= 23.0\nmse = 98.5\nsamples = 741\nvalue = 25.8"] ;
+1 -> 2 ;
+3 [label="mse = 68.8\nsamples = 172\nvalue = 20.8"] ;
+2 -> 3 ;
+4 [label="mse = 97.7\nsamples = 569\nvalue = 27.3"] ;
+2 -> 4 ;
+5 [label="AST10_MA <= 7.8\nmse = 106.3\nsamples = 392\nvalue = 33.4"] ;
+1 -> 5 ;
+6 [label="mse = 100.4\nsamples = 385\nvalue = 33.1"] ;
+5 -> 6 ;
+7 [label="mse = 162.1\nsamples = 7\nvalue = 49.5"] ;
+5 -> 7 ;
+8 [label="FPTS16_MA <= 48.4\nmse = 180.0\nsamples = 940\nvalue = 45.1"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="FPTS18_MA <= 43.6\nmse = 123.2\nsamples = 681\nvalue = 41.2"] ;
+8 -> 9 ;
+10 [label="mse = 118.9\nsamples = 482\nvalue = 39.5"] ;
+9 -> 10 ;
+11 [label="mse = 109.7\nsamples = 199\nvalue = 45.2"] ;
+9 -> 11 ;
+12 [label="FGA5_MA <= 16.4\nmse = 182.4\nsamples = 259\nvalue = 55.5"] ;
+8 -> 12 ;
+13 [label="mse = 178.9\nsamples = 25\nvalue = 41.6"] ;
+12 -> 13 ;
+14 [label="mse = 164.0\nsamples = 234\nvalue = 56.7"] ;
+12 -> 14 ;
+}
